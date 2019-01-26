@@ -1,17 +1,27 @@
 [
-    {
-       "firstName": "Nicolae" ,
-       "lastName" : "Matei" ,
-       "phone":" 0766334422"
-    },
-    {
-        "firstName": "Sarb" ,
-        "lastName" : "Vasile" ,
-        "phone":" 0766331421"
-     },
-     {
-        "firstName": "Mos" ,
-        "lastName" : "Nicolae" ,
-        "phone":" 072553344"
-     }
+  {
+    "firstName": "Nicolae",
+    "lastName": "Matei",
+    "phone": " 0766334422"
+  },
+  {
+    "firstName": "Sarb",
+    "lastName": "Vasile",
+    "phone": " 0766331421"
+  },
+  {
+    "firstName": "Mos",
+    "lastName": "Nicolae",
+    "phone": " 072553344"
+  },
+  {
+    "firstName": "Ungur",
+    "lastName": "Ionel",
+    "phone": "0724721507"
+  },
+  {
+    "firstName": "",
+    "lastName": "",
+    "phone": ""
+  }
 ]
