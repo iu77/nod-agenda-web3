@@ -46,5 +46,30 @@ router.post('/create', function (req, res, next) {
 
   res.json({ succes: true });
 });
+// /contacts/update
+router.post('/update', function (req, res, next) {
+  var oldPhone = req.query.phone;
+  var firstName = req.body.firstName;
+  var lastName = req.body.lastName;
+  var phone = req.body.phone;
+
+  var content = fs.readFileSync('public/data/contacts.json');
+  var contacts = JSON.parse(content);
+
+  //update..(vers1)
+  var contact = contacts.find(function (contact) {
+    return contact.phone == oldPhone;
+  })
+  contact.firstName = firstName;
+  contact.lastName = lastName;
+  contact.phone = phone;
+  //to do (vers2)
+
+
+  content = JSON.stringify(contacts, null, 2);
+  fs.writeFileSync('public/data/contacts.json', content);
+
+  res.json({ succes: true });
+});
 
 module.exports = router;
