@@ -9,10 +9,10 @@ function loadContacts() {
 
 function getNewRow() {
     return `<tr>
-    <td><input type="text" name="firstName" placeholder="First Name"/></td>
-    <td><input type="text" name="lastName" placeholder="Last Name"/></td>
-    <td><input type="text" name="phone" placeholder="Phone"/></td>
-    <td><button onclick="saveContact()">Save</button></td>
+         <td><input type="text" name="firstName" placeholder="First Name"/></td>
+         <td><input type="text" name="lastName" placeholder="Last Name"/></td>
+         <td><input type="text" name="phone" placeholder="Phone"/></td>
+         <td><button onclick="saveContact()">Save</button></td>
      </tr>`;
 }
 
@@ -30,7 +30,7 @@ function saveContact() {
         phone: phone //ES5 (key=value)
     }).done(function (response) {
         console.warn('done create contact', response);
-        phoneToEdit="";
+        phoneToEdit = "";
         if (response.success) {
             loadContacts();
         }
@@ -70,8 +70,16 @@ function initEvents() {
         document.querySelector('input[name=firstName]').value = contact.firstName;
         $('input[name=lastName]').val(contact.lastName);
         $('input[name=phone]').val(contact.phone);
-
     });
+
+    document.getElementById("search").addEventListener("input", doSearch);
+}
+
+
+function doSearch() {
+    var value = this.value;
+  //sau:  //var value = document.getElementById("search").value;
+    console.warn('please... search', value);
 }
 
 // start app

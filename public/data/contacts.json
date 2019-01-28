@@ -10,18 +10,18 @@
     "phone": "342"
   },
   {
-    "firstName": "",
-    "lastName": "",
-    "phone": ""
+    "firstName": "Titi",
+    "lastName": "Suru",
+    "phone": "12345"
+  },
+  {
+    "firstName": "Capra",
+    "lastName": "Rada",
+    "phone": "54321"
   },
   {
     "firstName": "Ungur",
     "lastName": "Ionel",
-    "phone": "0724721507"
-  },
-  {
-    "firstName": "Ungur",
-    "lastName": "Ionel",
-    "phone": "0724721507"
+    "phone": "724721507"
   }
 ]
