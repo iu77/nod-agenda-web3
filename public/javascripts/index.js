@@ -1,3 +1,4 @@
+
 var phoneToEdit = '';
 function loadContacts() {
     $.ajax('data/contacts.json').done(function (contacts) {
@@ -76,10 +77,17 @@ function initEvents() {
 }
 
 
-function doSearch() {
+function doSearch(ev) {
     var value = this.value;
-  //sau:  //var value = document.getElementById("search").value;
-    console.warn('please... search', value);
+    //sau:  //var value = document.getElementById("search").value;
+    console.warn('please... search', value, ev);
+
+    var filteredContacts = globalContacts.filter(function (contact) {
+        console.log(contact.firstName, value);
+        return contact.firstName==value;
+    });
+
+    displayContacts(filteredContacts);
 }
 
 // start app
