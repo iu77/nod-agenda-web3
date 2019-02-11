@@ -11,7 +11,7 @@
 <body>
     <h1>Phone book</h1>
     <div style="padding-bottom: 5px">
-        <input type="text" id="search" placeholder="search">
+        <input type="text" id="search" placeholder="Search">
     </div>
 
     <table>
@@ -30,6 +30,15 @@
 
 
         </tbody>
+        <tfoot>
+            <tr>
+                <td><input type="text" name="firstName" placeholder="First Name"/></td>
+                <td><input type="text" name="lastName" placeholder="Last Name"/></td>
+                <td><input type="text" name="phone" placeholder="Phone"/></td>
+                <td><button onclick="saveContact()">Save</button></td>
+            </tr>
+        </tfoot>
+
 
     </table>
 

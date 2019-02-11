@@ -1,27 +1,32 @@
 [
   {
-    "firstName": "matei",
-    "lastName": "nicolae",
-    "phone": "12345"
-  },
-  {
-    "firstName": "gica",
+    "firstName": "Ungur",
     "lastName": "Ionel",
-    "phone": "0722342555"
+    "phone": "0724721507"
   },
   {
-    "firstName": "Titi",
-    "lastName": "Suru",
-    "phone": "12345"
+    "firstName": "Sarb",
+    "lastName": "Vasalica",
+    "phone": "0722444333"
   },
   {
-    "firstName": "Capra",
-    "lastName": "Rada",
-    "phone": "0728334455"
+    "firstName": "Rada",
+    "lastName": "Capra",
+    "phone": "0744555777"
+  },
+  {
+    "firstName": "Suru",
+    "lastName": "Titi",
+    "phone": "0264333456"
+  },
+  {
+    "firstName": "Simson",
+    "lastName": "Bart",
+    "phone": "0264123456"
   },
   {
     "firstName": "Ungur",
     "lastName": "Ionel",
-    "phone": "0724721507"
+    "phone": "724721507"
   }
 ]
